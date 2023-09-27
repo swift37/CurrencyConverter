@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Currency Converter</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Currency Converter</h1>
+				<label
+					>Check live rates, set rate alerts, receive notifications and
+					more.</label
+				>
+			</header>
+			<form action="#">
+				<div class="row">
+					<label>Amount</label>
+					<div class="amount">
+						<div class="select-container">
+							<img src="images/us.svg" alt="US" width="45" />
+							<select id="fromCurrency">
+								<option value="USD" selected></option>
+								<option value="EUR"></option>
+								<option value="AUD"></option>
+								<option value="CAD"></option>
+								<option value="CHF"></option>
+								<option value="JPY"></option>
+								<option value="GBP"></option>
+								<option value="CNH"></option>
+								<option value="PLN"></option>
+								<option value="UAH"></option>
+							</select>
+						</div>
+						<input id="fromAmount" type="number" min="0" />
+					</div>
+				</div>
+				<button class="change-button">
+					<img src="images/exchange.svg" alt="Change" width="20" />
+				</button>
+				<div class="row">
+					<label>Converted Amount</label>
+					<div class="amount">
+						<div class="select-container">
+							<img src="images/us.svg" alt="US" width="45" />
+							<select id="toCurrency">
+								<option value="USD"></option>
+								<option value="EUR" selected></option>
+								<option value="AUD"></option>
+								<option value="CAD"></option>
+								<option value="CHF"></option>
+								<option value="JPY"></option>
+								<option value="GBP"></option>
+								<option value="CNH"></option>
+								<option value="PLN"></option>
+								<option value="UAH"></option>
+							</select>
+						</div>
+						<input id="toAmount" type="number" min="0" />
+					</div>
+				</div>
+				<button class="get-rate-button">Get Exchange Rate</button>
+			</form>
+			<div class="ex-rate-container">
+				<label>Indicative Exchange Rate</label>
+				<div class="ex-rate">1 USD = 0.95 EUR</div>
+			</div>
+		</div>
+	</body>
+</html>
