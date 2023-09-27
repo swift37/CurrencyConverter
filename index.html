@@ -26,45 +26,45 @@
 					<label>Amount</label>
 					<div class="amount">
 						<div class="select-container">
-							<img src="images/us.svg" alt="US" width="45" />
+							<img src="images/us.svg" alt="US" />
 							<select id="fromCurrency">
-								<option value="USD" selected></option>
-								<option value="EUR"></option>
-								<option value="AUD"></option>
-								<option value="CAD"></option>
-								<option value="CHF"></option>
-								<option value="JPY"></option>
-								<option value="GBP"></option>
-								<option value="CNH"></option>
-								<option value="PLN"></option>
-								<option value="UAH"></option>
+								<option value="USD" selected>USD</option>
+								<option value="EUR">EUR</option>
+								<option value="AUD">AUD</option>
+								<option value="CAD">CAD</option>
+								<option value="CHF">CHF</option>
+								<option value="JPY">JPY</option>
+								<option value="GBP">GBP</option>
+								<option value="CNH">CNH</option>
+								<option value="PLN">PLN</option>
+								<option value="UAH">UAH</option>
 							</select>
 						</div>
-						<input id="fromAmount" type="number" min="0" />
+						<input id="fromAmount" value="1.00" type="number" min="0" />
 					</div>
 				</div>
 				<button class="change-button">
-					<img src="images/exchange.svg" alt="Change" width="20" />
+					<img src="images/exchange.svg" alt="Change" />
 				</button>
 				<div class="row">
 					<label>Converted Amount</label>
 					<div class="amount">
 						<div class="select-container">
-							<img src="images/us.svg" alt="US" width="45" />
+							<img src="images/eu.svg" alt="US" />
 							<select id="toCurrency">
-								<option value="USD"></option>
-								<option value="EUR" selected></option>
-								<option value="AUD"></option>
-								<option value="CAD"></option>
-								<option value="CHF"></option>
-								<option value="JPY"></option>
-								<option value="GBP"></option>
-								<option value="CNH"></option>
-								<option value="PLN"></option>
-								<option value="UAH"></option>
+								<option value="USD">USD</option>
+								<option value="EUR" selected>EUR</option>
+								<option value="AUD">AUD</option>
+								<option value="CAD">CAD</option>
+								<option value="CHF">CHF</option>
+								<option value="JPY">JPY</option>
+								<option value="GBP">GBP</option>
+								<option value="CNH">CNH</option>
+								<option value="PLN">PLN</option>
+								<option value="UAH">UAH</option>
 							</select>
 						</div>
-						<input id="toAmount" type="number" min="0" />
+						<input id="toAmount" value="0.95" type="number" min="0" disabled />
 					</div>
 				</div>
 				<button class="get-rate-button">Get Exchange Rate</button>
