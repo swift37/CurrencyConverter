@@ -119,6 +119,20 @@ input::-webkit-inner-spin-button {
 	word-wrap: break-word;
 }
 
+.select-container select::-webkit-scrollbar {
+	width: 8px;
+}
+
+.select-container select::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+.select-container select::-webkit-scrollbar-thumb {
+	background: #888888;
+	border-radius: 8px;
+	border: 2px solid #ffffff;
+}
+
 .change-button {
 	display: flex;
 	justify-content: center;

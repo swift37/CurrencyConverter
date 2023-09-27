@@ -27,18 +27,7 @@
 					<div class="amount">
 						<div class="select-container">
 							<img src="images/us.svg" alt="US" />
-							<select id="fromCurrency">
-								<option value="USD" selected>USD</option>
-								<option value="EUR">EUR</option>
-								<option value="AUD">AUD</option>
-								<option value="CAD">CAD</option>
-								<option value="CHF">CHF</option>
-								<option value="JPY">JPY</option>
-								<option value="GBP">GBP</option>
-								<option value="CNH">CNH</option>
-								<option value="PLN">PLN</option>
-								<option value="UAH">UAH</option>
-							</select>
+							<select id="fromCurrency"></select>
 						</div>
 						<input id="fromAmount" value="1.00" type="number" min="0" />
 					</div>
@@ -51,18 +40,7 @@
 					<div class="amount">
 						<div class="select-container">
 							<img src="images/eu.svg" alt="US" />
-							<select id="toCurrency">
-								<option value="USD">USD</option>
-								<option value="EUR" selected>EUR</option>
-								<option value="AUD">AUD</option>
-								<option value="CAD">CAD</option>
-								<option value="CHF">CHF</option>
-								<option value="JPY">JPY</option>
-								<option value="GBP">GBP</option>
-								<option value="CNH">CNH</option>
-								<option value="PLN">PLN</option>
-								<option value="UAH">UAH</option>
-							</select>
+							<select id="toCurrency"></select>
 						</div>
 						<input id="toAmount" value="0.95" type="number" min="0" disabled />
 					</div>
@@ -74,5 +52,8 @@
 				<div class="ex-rate">1 USD = 0.95 EUR</div>
 			</div>
 		</div>
+
+		<script src="country-codes.js"></script>
+		<script src="main.js"></script>
 	</body>
 </html>
