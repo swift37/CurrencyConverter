@@ -27,9 +27,9 @@
 					<div class="amount">
 						<div class="select-container">
 							<img src="images/us.svg" alt="US" />
-							<select id="fromCurrency"></select>
+							<select id="inputCurrency"></select>
 						</div>
-						<input id="fromAmount" value="1.00" type="number" min="0" />
+						<input id="inputAmount" value="1.00" type="number" min="0" />
 					</div>
 				</div>
 				<button class="change-button">
@@ -40,9 +40,15 @@
 					<div class="amount">
 						<div class="select-container">
 							<img src="images/eu.svg" alt="US" />
-							<select id="toCurrency"></select>
+							<select id="outputCurrency"></select>
 						</div>
-						<input id="toAmount" value="0.95" type="number" min="0" disabled />
+						<input
+							id="outputAmount"
+							value="0.95"
+							type="number"
+							min="0"
+							disabled
+						/>
 					</div>
 				</div>
 				<button class="get-rate-button">Get Exchange Rate</button>
