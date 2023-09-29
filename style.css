@@ -133,7 +133,7 @@ input::-webkit-inner-spin-button {
 	border: 2px solid #ffffff;
 }
 
-.change-button {
+.swap-button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -147,11 +147,11 @@ input::-webkit-inner-spin-button {
 	transition: background 0.3s;
 }
 
-.change-button:hover {
+.swap-button:hover {
 	background-color: #8250d7;
 }
 
-.change-button img {
+.swap-button img {
 	color: #ffffff;
 	transform: rotate(270deg);
 	width: 22px;

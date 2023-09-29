@@ -1,6 +1,7 @@
 const dropdowns = document.querySelectorAll('.amount select')
 const getRateBtn = document.querySelector('.get-rate-button')
 const indicativeExRate = document.querySelector('.ex-rate')
+const swapBtn = document.querySelector('.swap-button')
 const inputCurrency = document.getElementById('inputCurrency')
 const outputCurrency = document.getElementById('outputCurrency')
 const inputAmount = document.getElementById('inputAmount')
@@ -56,3 +57,14 @@ getRateBtn.addEventListener('click', e => {
 	e.preventDefault()
 	getExchangeRate()
 })
+
+const swapCurrencies = () => {
+	const temp = inputCurrency.value
+	inputCurrency.value = outputCurrency.value
+	outputCurrency.value = temp
+	loadFlag(inputCurrency)
+	loadFlag(outputCurrency)
+	getExchangeRate()
+}
+
+swapBtn.addEventListener('click', swapCurrencies)
